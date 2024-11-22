@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT License"
+
+[[mods]]
+modId = "selectiveauth"
+version = "${version}"
+displayName = "Selective Auth"
+logoFile = "icon.png"
+authors = "Motschen"
+description = '''
+Allow select players to join without authentication
+'''
+
+[[mixins]]
+config = "selectiveauth.mixins.json"
+
+[[dependencies.selectiveauth]]
+modId = "neoforge"
+mandatory = true
+versionRange = "[21.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.selectiveauth]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.selectiveauth]]
+modId = "midnightlib"
+mandatory = true
+versionRange = "[1.0,)"
+ordering = "AFTER"
+side = "BOTH"

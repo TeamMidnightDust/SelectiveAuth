@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "selectiveauth",
+  "version": "${version}",
+
+  "name": "Selective Auth",
+  "description": "Allow select players to join without authentication",
+  "authors": [
+    "Motschen"
+  ],
+  "contact": {
+    "homepage": "https://www.midnightdust.eu/",
+    "sources": "https://github.com/TeamMidnightDust/SelectiveAuth",
+    "issues": "https://github.com/TeamMidnightDust/SelectiveAuth/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/selectiveauth/icon.png",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "eu.midnightdust.selectiveauth.fabric.SelectiveAuthFabric"
+    ]
+  },
+
+  "mixins": [
+    "selectiveauth.mixins.json"
+  ],
+
+  "depends": {
+    "fabric-api": "*",
+    "midnightlib": "*"
+  }
+}
